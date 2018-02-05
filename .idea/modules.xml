@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlphabetIndexer.iml" filepath="$PROJECT_DIR$/AlphabetIndexer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/List-AtoZ-Indexing/List-AtoZ-Indexing.iml" filepath="$PROJECT_DIR$/List-AtoZ-Indexing/List-AtoZ-Indexing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
