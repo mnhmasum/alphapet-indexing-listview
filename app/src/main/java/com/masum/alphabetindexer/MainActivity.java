@@ -158,7 +158,257 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
         item = new ListItem("echinology");
         listItems.add(item);
 
-        item = new ListItem("b");
+        item = new ListItem("chlorinate");
+        listItems.add(item);
+        item = new ListItem("chlorinated");
+        listItems.add(item);
+        item = new ListItem("chlorinates");
+        listItems.add(item);
+
+
+        item = new ListItem("Diamox");
+        listItems.add(item);
+
+        item = new ListItem("Dian");
+        listItems.add(item);
+
+
+        item = new ListItem("Emyle");
+        listItems.add(item);
+
+        item = new ListItem("Emilee");
+        listItems.add(item);
+
+        item = new ListItem("Emylee");
+        listItems.add(item);
+
+        item = new ListItem("Fresnel");
+        listItems.add(item);
+
+        item = new ListItem("Fress");
+        listItems.add(item);
+
+
+        item = new ListItem("Goldi");
+        listItems.add(item);
+
+        item = new ListItem("Goldy");
+        listItems.add(item);
+
+        item = new ListItem("Goldia");
+        listItems.add(item);
+
+        item = new ListItem("Goldic");
+        listItems.add(item);
+
+        item = new ListItem("Goldie");
+        listItems.add(item);
+
+        item = new ListItem("gold-yellow");
+        listItems.add(item);
+
+        item = new ListItem("goldilocks");
+        listItems.add(item);
+
+        item = new ListItem("goldylocks");
+        listItems.add(item);
+
+        item = new ListItem("hirpled");
+        listItems.add(item);
+
+        item = new ListItem("hirples");
+        listItems.add(item);
+
+        item = new ListItem("hirpling");
+        listItems.add(item);
+
+        item = new ListItem("hirrient");
+        listItems.add(item);
+
+        item = new ListItem("intrudes");
+        listItems.add(item);
+
+        item = new ListItem("intruding");
+        listItems.add(item);
+
+        item = new ListItem("intrudingly");
+        listItems.add(item);
+
+        item = new ListItem("intrudress");
+        listItems.add(item);
+
+        item = new ListItem("intrunk");
+        listItems.add(item);
+
+        item = new ListItem("joineries");
+        listItems.add(item);
+
+        item = new ListItem("joinering");
+        listItems.add(item);
+
+        item = new ListItem("joiners");
+        listItems.add(item);
+        item = new ListItem("Joinerville");
+        listItems.add(item);
+
+        item = new ListItem("joinhand");
+        listItems.add(item);
+
+        item = new ListItem("katachromasis");
+        listItems.add(item);
+        item = new ListItem("katacrotic");
+        listItems.add(item);
+
+        item = new ListItem("katacrotism");
+        listItems.add(item);
+
+        item = new ListItem("katagelophobia");
+        listItems.add(item);
+        item = new ListItem("katagenesis");
+        listItems.add(item);
+
+        item = new ListItem("Lasser");
+        listItems.add(item);
+
+        item = new ListItem("lasses");
+        listItems.add(item);
+        item = new ListItem("lasset");
+        listItems.add(item);
+
+        item = new ListItem("Lassie");
+        listItems.add(item);
+
+        item = new ListItem("Malca");
+        listItems.add(item);
+        item = new ListItem("Malcah");
+        listItems.add(item);
+
+        item = new ListItem("Malchy");
+        listItems.add(item);
+
+        item = new ListItem("malchite");
+        listItems.add(item);
+        item = new ListItem("Malchus");
+        listItems.add(item);
+
+        item = new ListItem("Nigritian");
+        listItems.add(item);
+
+        item = new ListItem("nigrities");
+        listItems.add(item);
+        item = new ListItem("nigritude");
+        listItems.add(item);
+
+        item = new ListItem("nigritudinous");
+        listItems.add(item);
+
+        item = new ListItem("nigromancer");
+        listItems.add(item);
+        item = new ListItem("Oak-clad");
+        listItems.add(item);
+
+        item = new ListItem("Oak-covered");
+        listItems.add(item);
+
+        item = new ListItem("Oak-crested");
+        listItems.add(item);
+        item = new ListItem("Oak-crowned");
+        listItems.add(item);
+
+        item = new ListItem("Oakdale");
+        listItems.add(item);
+
+        item = new ListItem("Peribursal");
+        listItems.add(item);
+        item = new ListItem("Pericaecal");
+        listItems.add(item);
+
+        item = new ListItem("Pericaecitis");
+        listItems.add(item);
+
+        item = new ListItem("Pericanalicular");
+        listItems.add(item);
+        item = new ListItem("Pericapsular");
+        listItems.add(item);
+
+        item = new ListItem("quackster");
+        listItems.add(item);
+
+        item = new ListItem("quad");
+        listItems.add(item);
+        item = new ListItem("quad.");
+        listItems.add(item);
+
+        item = new ListItem("quadded");
+        listItems.add(item);
+
+        item = new ListItem("reachers");
+        listItems.add(item);
+        item = new ListItem("reaches");
+        listItems.add(item);
+
+        item = new ListItem("reachy");
+        listItems.add(item);
+
+        item = new ListItem("reachieve");
+        listItems.add(item);
+        item = new ListItem("reachieved");
+        listItems.add(item);
+
+        item = new ListItem("scuffle");
+        listItems.add(item);
+
+        item = new ListItem("scuffled");
+        listItems.add(item);
+        item = new ListItem("scuffler");
+        listItems.add(item);
+
+        item = new ListItem("scufflers");
+        listItems.add(item);
+        item = new ListItem("scuffles");
+        listItems.add(item);
+
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
+        listItems.add(item);
+        item = new ListItem("a");
         listItems.add(item);
 
         mAdapter.notifyDataSetChanged();
@@ -171,16 +421,16 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
 
         Toast.makeText(getApplicationContext(), "" + letter, Toast.LENGTH_SHORT).show();
 
-        mAdapter = new ListAdapter(filter(letter));
+        mAdapter = new ListAdapter(filterResult(letter));
         recyclerView.setAdapter(mAdapter);
 
 
     }
 
-    private ArrayList<ListItem> filter(String letter) {
+    private ArrayList<ListItem> filterResult(String letter) {
         ArrayList<ListItem> filteredList = new ArrayList<>();
         for (ListItem title : listItems) {
-            if (String.valueOf(title.getTitle().charAt(0)).equalsIgnoreCase(String.valueOf(letter.charAt(0)))) {
+            if (String.valueOf(title.getTitle().charAt(0)).equalsIgnoreCase(letter)) {
                 filteredList.add(title);
             }
         }
