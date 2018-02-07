@@ -26,6 +26,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'me.grantland:autofittextview:0.2.1'
-    implementation project(':List-AtoZ-Indexing')
+    implementation project(':library')
     implementation 'com.android.support:recyclerview-v7:26.1.0'
 }
