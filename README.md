@@ -4,24 +4,23 @@ SimpleAlphabetIndexer is simple alphate indexer library. It can be used with ver
 #XML
 ```
 <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+android:layout_width="match_parent"
+android:layout_height="match_parent">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/alphabetIndexView" />
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_toLeftOf="@+id/alphabetIndexView" />
 
-        <com.masum.atoz.indexer.SimpleAlphabetIndexer
-            android:id="@+id/alphabetIndexView"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true" />
+    <com.masum.atoz.indexer.SimpleAlphabetIndexer
+    android:id="@+id/alphabetIndexView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true" />
 
-
-    </RelativeLayout>
+</RelativeLayout>
 ```
 
 #JAVA
