@@ -1,7 +1,7 @@
 # SimpleAlphabetIndexer
 SimpleAlphabetIndexer is simple alphate indexer library. It can be used with vertical list view and recycler view to sort the list by using letter click.
 
-###XML
+### XML
 ```
 <RelativeLayout
     android:layout_width="match_parent"
@@ -24,7 +24,7 @@ SimpleAlphabetIndexer is simple alphate indexer library. It can be used with ver
 
 ```
 
-###JAVA
+### JAVA
 ```
 public class MainActivity extends AppCompatActivity implements OnSelectLetter {
 
@@ -47,11 +47,11 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
     
 }
 ```
-###To change the Indexer view background color
+### To change the Indexer view background color
 ```
 simpleAlphabetIndexer.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
 ```
-###To change letters font color
+### To change letters font color
 ```
 simpleAlphabetIndexer.setHolderBackgroundColor(getResources().getColor(R.color.white))
 ```
