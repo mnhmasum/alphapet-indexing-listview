@@ -47,3 +47,12 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
     
 }
 ```
+#To change the Indexer view background color
+```
+simpleAlphabetIndexer.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+```
+#To change letters font color
+```
+simpleAlphabetIndexer.setHolderBackgroundColor(getResources().getColor(R.color.white))
+```
+
