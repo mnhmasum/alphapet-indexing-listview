@@ -1,4 +1,4 @@
-package com.masum.alphabetindexer;
+package com.masum.alphabetindexer.model;
 
 public class ListItem {
     private String title;
