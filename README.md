@@ -28,11 +28,6 @@ SimpleAlphabetIndexer is simple alphate indexer library. It can be used with ver
 ```
 public class MainActivity extends AppCompatActivity implements OnSelectLetter {
 
-    private List<ListItem> listItems = new ArrayList<>();
-    private ListAdapter mAdapter;
-    private RecyclerView recyclerView;
-    private RecyclerView.LayoutManager mLayoutManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
