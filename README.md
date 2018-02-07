@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
     
      @Override
     public void onSelectLetter(String letter) {
-        Toast.makeText(getApplicationContext(), "" + letter, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), letter, Toast.LENGTH_SHORT).show();
     }
     
 }
