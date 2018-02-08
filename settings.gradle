@@ -1,1 +1,1 @@
-include ':app', ':List-AtoZ-Indexing'
+include ':app', ':library'
