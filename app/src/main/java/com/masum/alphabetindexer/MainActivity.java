@@ -14,7 +14,7 @@ import com.masum.atoz.indexer.SimpleAlphabetIndexer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements OnSelectLetter {
+public class MainActivity extends AppCompatActivity {
 
     private List<ListItem> listItems = new ArrayList<>();
     private ListAdapter mAdapter;
@@ -38,24 +38,18 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
         SimpleAlphabetIndexer simpleAlphabetIndexer = (SimpleAlphabetIndexer) findViewById(R.id.alphabetIndexView);
         simpleAlphabetIndexer.setLetterFontColor(getResources().getColor(R.color.colorPrimaryDark));
         simpleAlphabetIndexer.setBackgroundColor(getResources().getColor(R.color.white));
-        simpleAlphabetIndexer.addListener(this);
+        simpleAlphabetIndexer.addListener(new OnSelectLetter() {
+            @Override
+            public void onSelectLetter(String letter) {
+                Toast.makeText(getApplicationContext(), "" + letter, Toast.LENGTH_SHORT).show();
+                //If you want to move on selected letter with smooth scrolling
+                scrollToPosition(letter);
 
-    }
-
-    @Override
-    public void onSelectLetter(String letter) {
-
-        Toast.makeText(getApplicationContext(), "" + letter, Toast.LENGTH_SHORT).show();
-
-        //If you want to load data only respected alphabet then use this code
-
-       /* mAdapter = new ListAdapter(filterResult(letter));
-        recyclerView.setAdapter(mAdapter);*/
-
-
-        //If you want to move on selected letter with smooth scrolling
-        scrollToPosition(letter);
-
+                //If you want to load data only respected alphabet then use this code
+               /* mAdapter = new ListAdapter(filterResult(letter));
+                recyclerView.setAdapter(mAdapter);*/
+            }
+        });
 
     }
 
