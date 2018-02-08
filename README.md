@@ -1,47 +1,34 @@
-# SimpleAlphabetIndexer
-SimpleAlphabetIndexer is simple alphate indexer library. It can be used with vertical list view and recycler view to sort the list by using letter click.
+# Simple Alphabet Indexer Recycler view
+Simple Alphabet Index Recycler view is a library for indexing the recycler view list by selecting a letter.
 
 ### XML
 ```
-<RelativeLayout
+<com.masum.atoz.indexer.SimpleAlphabetIndexerView
+    android:id="@+id/alphabetIndexerView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_toLeftOf="@+id/alphabetIndexView" />
-
-    <com.masum.atoz.indexer.SimpleAlphabetIndexer
-        android:id="@+id/alphabetIndexView"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true" />
-
-</RelativeLayout>
+    android:layout_height="match_parent"/>
 
 ```
 
 ### JAVA
 ```
-SimpleAlphabetIndexer simpleAlphabetIndexer = (SimpleAlphabetIndexer) findViewById(R.id.alphabetIndexView);
-simpleAlphabetIndexer.addListener(new OnSelectLetter() {
-    @Override
-    public void onSelectLetter(String letter) {
-        Toast.makeText(getApplicationContext(), "" + letter, Toast.LENGTH_SHORT).show();
-
-    }
-});
+SimpleAlphabetIndexerView simpleAlphabetIndexerView = (SimpleAlphabetIndexerView) findViewById(R.id.alphabetIndexerView);
+        simpleAlphabetIndexerView.setAdapter(mAdapter);
+        simpleAlphabetIndexerView.addListener(new OnSelectLetter() {
+            @Override
+            public void onSelectLetter(String letter) {
+                Toast.makeText(MainActivity.this, letter, Toast.LENGTH_SHORT).show();
+                // do something with the selected letter
+            }
+        });
 
 ```
 ### To change the Indexer view background color
 ```
-simpleAlphabetIndexer.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+simpleAlphabetIndexerView.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
 ```
 ### To change letters font color
 ```
-simpleAlphabetIndexer.setHolderBackgroundColor(getResources().getColor(R.color.white))
+simpleAlphabetIndexerView.setLetterFontColor(getResources().getColor(R.color.white))
 ```
 
