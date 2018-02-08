@@ -27,9 +27,6 @@ SimpleAlphabetIndexer is simple alphate indexer library. It can be used with ver
 ### JAVA
 ```
 SimpleAlphabetIndexer simpleAlphabetIndexer = (SimpleAlphabetIndexer) findViewById(R.id.alphabetIndexView);
-simpleAlphabetIndexer.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
-simpleAlphabetIndexer.setHolderBackgroundColor(getResources().getColor(R.color.white));
-simpleAlphabetIndexer.addListener(this);
 simpleAlphabetIndexer.addListener(new OnSelectLetter() {
     @Override
     public void onSelectLetter(String letter) {
