@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="1dp">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerView"
@@ -26,6 +26,13 @@
 
 
     </RelativeLayout>
+
+    <com.masum.atoz.indexer.SimpleAlphabetIndexerView
+        android:id="@+id/alphabetIndexerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.masum.atoz.indexer.SimpleAlphabetIndexerView>
 
 
 </LinearLayout>

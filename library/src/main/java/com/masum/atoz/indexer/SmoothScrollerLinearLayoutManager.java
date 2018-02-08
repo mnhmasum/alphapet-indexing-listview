@@ -1,4 +1,4 @@
-package com.masum.alphabetindexer;
+package com.masum.atoz.indexer;
 
 import android.content.Context;
 import android.graphics.PointF;
