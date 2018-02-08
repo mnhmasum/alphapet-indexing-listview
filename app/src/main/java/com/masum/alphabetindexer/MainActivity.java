@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
         recyclerView.setAdapter(mAdapter);
 
         SimpleAlphabetIndexer simpleAlphabetIndexer = (SimpleAlphabetIndexer) findViewById(R.id.alphabetIndexView);
-        simpleAlphabetIndexer.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
-        simpleAlphabetIndexer.setHolderBackgroundColor(getResources().getColor(R.color.white));
+        simpleAlphabetIndexer.setLetterFontColor(getResources().getColor(R.color.colorPrimaryDark));
+        simpleAlphabetIndexer.setBackgroundColor(getResources().getColor(R.color.white));
         simpleAlphabetIndexer.addListener(this);
 
     }

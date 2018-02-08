@@ -110,14 +110,14 @@ public class SimpleAlphabetIndexer extends LinearLayout {
 
     }
 
-    public void setBackgroundColor(int color) {
+    public void setLetterFontColor(int color) {
         this.color = color;
         for (View v : insideViewsOfLetterHolder) {
             v.setBackgroundColor(color);
         }
     }
 
-    public void setHolderBackgroundColor(int color) {
+    public void setBackgroundColor(int color) {
         linearLayoutLetterHolder.setBackgroundColor(color);
     }
 
