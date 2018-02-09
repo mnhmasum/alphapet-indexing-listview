@@ -42,11 +42,11 @@ SimpleAlphabetIndexerView simpleAlphabetIndexerView = (SimpleAlphabetIndexerView
         });
 
 ```
-### To change the Indexer view background color
+### Background color
 ```
 simpleAlphabetIndexerView.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
 ```
-### To change letters font color
+### Letters font color
 ```
 simpleAlphabetIndexerView.setLetterFontColor(getResources().getColor(R.color.white))
 ```
