@@ -4,19 +4,19 @@ Simple Alphabet Index Recycler view is a library for indexing the recycler view 
 ### Dependencies
 Add it in your root build.gradle at the end of repositories:
 ```
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+allprojects {
+    repositories {
+	...
+	maven { url 'https://jitpack.io' }
+    }
+}
 ```
 
 Add the dependency in your application build.gradle file
 ```
-	dependencies {
-	        compile 'com.github.mnhmasum:SimpleAlphabetIndexer:1.0'
-	}
+dependencies {
+    compile 'com.github.mnhmasum:SimpleAlphabetIndexer:1.0'
+}
 
 ```
 
