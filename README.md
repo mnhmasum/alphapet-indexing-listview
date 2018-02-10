@@ -1,5 +1,5 @@
 # Simple Alphabet Indexer Recycler view
-Simple Alphabet Index Recycler view is a library for indexing the list by selecting a letter. It support almost all screen resolution of android. It gives you back the selected letter from the alphabet view then developer can implement their own logic.
+Simple Alphabet Index Recycler view is a library for indexing the list by selecting a letter. It support almost all screen resolution of android. It gives you back the selected letter from the alphabet view then developer can implement their own logic. We have given an example how to implement on the project. Please follow the below instruction or download the repository project.
 
 ![](https://media.giphy.com/media/3o7WIKTVGEXAwBpi6Y/giphy.gif)
 
