@@ -3,6 +3,8 @@ Simple Alphabet Index Recycler view is a library for indexing the recycler view 
 
 <a href="https://imgflip.com/gif/24bv5y"><img src="https://i.imgflip.com/24bv5y.gif" title="made at imgflip.com"/></a>
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/YOtYC"><a href="//imgur.com/YOtYC"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 ### Dependencies
 Add it in your root build.gradle at the end of repositories:
 ```
