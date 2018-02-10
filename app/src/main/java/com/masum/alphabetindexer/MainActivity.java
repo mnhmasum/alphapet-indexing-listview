@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         listItems.addAll(DataSet.getData());
 
         simpleAlphabetIndexerView = (SimpleAlphabetIndexerView) findViewById(R.id.alphabetIndexerView);
+        simpleAlphabetIndexerView.setBackgroundColor(getResources().getColor(R.color.charlestonGreen));
+        simpleAlphabetIndexerView.setLetterFontColor(getResources().getColor(R.color.offWhite));
         simpleAlphabetIndexerView.setAdapter(mAdapter);
         simpleAlphabetIndexerView.addListener(new OnSelectLetter() {
             @Override
