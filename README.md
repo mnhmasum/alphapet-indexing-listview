@@ -1,7 +1,7 @@
 # Simple Alphabet Indexer Recycler view
 Simple Alphabet Index Recycler view is a library for indexing the recycler view list by selecting a letter. 
 
-<a href="https://imgflip.com/gif/24bv0l"><img src="https://i.imgflip.com/24bv0l.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/24bv5y"><img src="https://i.imgflip.com/24bv5y.gif" title="made at imgflip.com"/></a>
 
 ### Dependencies
 Add it in your root build.gradle at the end of repositories:
