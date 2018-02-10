@@ -1,9 +1,7 @@
 # Simple Alphabet Indexer Recycler view
 Simple Alphabet Index Recycler view is a library for indexing the recycler view list by selecting a letter. 
 
-![alt text](https://imgur.com/a/YOtYC)
-
-<a href="https://imgflip.com/gif/24bv5y"><img src="https://i.imgflip.com/24bv5y.gif" title="made at imgflip.com"/></a>
+![](https://media.giphy.com/media/l4pSUvsVcmZPo1Jgk/giphy.gif)
 
 
 ### Dependencies
