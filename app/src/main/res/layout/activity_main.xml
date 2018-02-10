@@ -6,26 +6,9 @@
     android:orientation="vertical"
     tools:context="com.masum.alphabetindexer.MainActivity">
 
-
-    <RelativeLayout
+    <com.masum.atoz.indexer.SimpleAlphabetIndexerView
+        android:id="@+id/alphabetIndexerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/alphabetIndexView" />
-
-        <com.masum.atoz.indexer.SimpleAlphabetIndexer
-            android:id="@+id/alphabetIndexView"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true" />
-
-
-    </RelativeLayout>
-
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

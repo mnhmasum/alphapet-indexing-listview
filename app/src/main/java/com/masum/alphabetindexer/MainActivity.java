@@ -1,25 +1,22 @@
 package com.masum.alphabetindexer;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.masum.alphabetindexer.model.ListItem;
 import com.masum.atoz.indexer.OnSelectLetter;
-import com.masum.atoz.indexer.SimpleAlphabetIndexer;
+import com.masum.atoz.indexer.SimpleAlphabetIndexerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements OnSelectLetter {
+public class MainActivity extends AppCompatActivity {
 
     private List<ListItem> listItems = new ArrayList<>();
     private ListAdapter mAdapter;
-    private RecyclerView recyclerView;
-    RecyclerView.LayoutManager mLayoutManager;
+
+    private  SimpleAlphabetIndexerView simpleAlphabetIndexerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,32 +26,16 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
         mAdapter = new ListAdapter(listItems);
         listItems.addAll(DataSet.getData());
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerView.setLayoutManager(new SmoothScrollerLinearLayoutManager(this));
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(mAdapter);
-
-        SimpleAlphabetIndexer simpleAlphabetIndexer = (SimpleAlphabetIndexer) findViewById(R.id.alphabetIndexView);
-        simpleAlphabetIndexer.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
-        simpleAlphabetIndexer.setHolderBackgroundColor(getResources().getColor(R.color.colorAccent));
-        simpleAlphabetIndexer.addListener(this);
-
-    }
-
-    @Override
-    public void onSelectLetter(String letter) {
-
-        Toast.makeText(getApplicationContext(), "" + letter, Toast.LENGTH_SHORT).show();
-
-        //If you want to load data only respected alphabet then use this code
-
-       /* mAdapter = new ListAdapter(filterResult(letter));
-        recyclerView.setAdapter(mAdapter);*/
-
-
-        //If you want to move on selected letter with smooth scrolling
-        scrollToPosition(letter);
+        simpleAlphabetIndexerView = (SimpleAlphabetIndexerView) findViewById(R.id.alphabetIndexerView);
+        simpleAlphabetIndexerView.setAdapter(mAdapter);
+        simpleAlphabetIndexerView.addListener(new OnSelectLetter() {
+            @Override
+            public void onSelectLetter(String letter) {
+                Toast.makeText(MainActivity.this, letter, Toast.LENGTH_SHORT).show();
+                scrollToPosition(letter);
+                //filterResult(letter);
+            }
+        });
 
 
     }
@@ -63,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
     private void scrollToPosition(String letter) {
         for (int i = 0; i < listItems.size(); i++) {
             if (String.valueOf(listItems.get(i).getTitle().charAt(0)).equalsIgnoreCase(letter)) {
-                recyclerView.smoothScrollToPosition(i);
+                simpleAlphabetIndexerView.scrollToPosition(true, i);
                 break;
             }
         }
@@ -79,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements OnSelectLetter {
                 filteredList.add(title);
             }
         }
+
+        mAdapter = new ListAdapter(filteredList);
+        simpleAlphabetIndexerView.setAdapter(mAdapter);
 
         return filteredList;
     }
