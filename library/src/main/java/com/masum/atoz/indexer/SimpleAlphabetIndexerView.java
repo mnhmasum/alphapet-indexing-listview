@@ -73,7 +73,7 @@ public class SimpleAlphabetIndexerView extends LinearLayout {
         recyclerView.setLayoutManager(new SmoothScrollerLinearLayoutManager(context));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        linearLayoutLetterHolder = this.findViewById(R.id.LinearMainHolder);
+        linearLayoutLetterHolder = (LinearLayout) this.findViewById(R.id.LinearMainHolder);
         insideViewsOfLetterHolder = linearLayoutLetterHolder.getTouchables();
 
         ViewTreeObserver viewTreeObserver = linearLayoutLetterHolder.getViewTreeObserver();

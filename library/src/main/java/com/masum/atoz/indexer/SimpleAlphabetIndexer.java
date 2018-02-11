@@ -66,7 +66,7 @@ public class SimpleAlphabetIndexer extends LinearLayout {
         // a real application your images should be in the
         // application package so they are always available.
 
-        linearLayoutLetterHolder = this.findViewById(R.id.LinearMainHolder);
+        linearLayoutLetterHolder = (LinearLayout) this.findViewById(R.id.LinearMainHolder);
         insideViewsOfLetterHolder = linearLayoutLetterHolder.getTouchables();
 
         ViewTreeObserver viewTreeObserver = linearLayoutLetterHolder.getViewTreeObserver();
@@ -128,7 +128,6 @@ public class SimpleAlphabetIndexer extends LinearLayout {
     public void addListener(OnSelectLetter onSelectLetter) {
         this.onSelectLetter = onSelectLetter;
     }
-
 
 
 }
