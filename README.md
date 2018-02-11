@@ -49,7 +49,7 @@ SimpleAlphabetIndexerView simpleAlphabetIndexerView = (SimpleAlphabetIndexerView
 ```
 simpleAlphabetIndexerView.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
 ```
-### Letters font color
+### Font color of Alphabet holder
 ```
 simpleAlphabetIndexerView.setLetterFontColor(getResources().getColor(R.color.white))
 ```
