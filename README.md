@@ -54,3 +54,5 @@ simpleAlphabetIndexerView.setBackgroundColor(getResources().getColor(R.color.col
 simpleAlphabetIndexerView.setLetterFontColor(getResources().getColor(R.color.white))
 ```
 
+
+
