@@ -18,7 +18,7 @@ allprojects {
 Add the dependency in your application build.gradle file
 ```
 dependencies {
-    compile 'com.github.mnhmasum:SimpleAlphabetIndexer:1.0'
+    compile 'com.github.mnhmasum:SimpleAlphabetIndexer:1.2'
 }
 
 ```
