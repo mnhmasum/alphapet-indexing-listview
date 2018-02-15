@@ -6,7 +6,7 @@ Simple Alphabet Index Recycler view is a library for indexing the list by select
 
 ### Dependencies
 Add it in your root build.gradle at the end of repositories:
-```
+```Java
 allprojects {
     repositories {
 	...
@@ -16,7 +16,7 @@ allprojects {
 ```
 
 Add the dependency in your application build.gradle file
-```
+```Java
 dependencies {
     compile 'com.github.mnhmasum:SimpleAlphabetIndexer:1.2'
 }
@@ -24,7 +24,7 @@ dependencies {
 ```
 
 ### XML
-```
+```XML
 <com.masum.atoz.indexer.SimpleAlphabetIndexerView
     android:id="@+id/alphabetIndexerView"
     android:layout_width="match_parent"
@@ -33,7 +33,7 @@ dependencies {
 ```
 
 ### JAVA
-```
+```Java
 SimpleAlphabetIndexerView simpleAlphabetIndexerView = (SimpleAlphabetIndexerView) findViewById(R.id.alphabetIndexerView);
         simpleAlphabetIndexerView.setAdapter(mAdapter);
         simpleAlphabetIndexerView.addListener(new OnSelectLetter() {
@@ -46,11 +46,11 @@ SimpleAlphabetIndexerView simpleAlphabetIndexerView = (SimpleAlphabetIndexerView
 
 ```
 ### Background color
-```
+```Java
 simpleAlphabetIndexerView.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
 ```
 ### Font color of Alphabet holder
-```
+```Java
 simpleAlphabetIndexerView.setLetterFontColor(getResources().getColor(R.color.white))
 ```
 
