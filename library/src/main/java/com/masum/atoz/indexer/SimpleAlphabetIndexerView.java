@@ -76,6 +76,11 @@ public class SimpleAlphabetIndexerView extends LinearLayout {
         linearLayoutLetterHolder = (LinearLayout) this.findViewById(R.id.LinearMainHolder);
         insideViewsOfLetterHolder = linearLayoutLetterHolder.getTouchables();
 
+        alphabetHolderHeightCalculation();
+
+    }
+
+    private void alphabetHolderHeightCalculation() {
         ViewTreeObserver viewTreeObserver = linearLayoutLetterHolder.getViewTreeObserver();
         viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
@@ -114,7 +119,6 @@ public class SimpleAlphabetIndexerView extends LinearLayout {
 
             }
         });
-
     }
 
     public void setLetterFontColor(int color) {
@@ -142,6 +146,13 @@ public class SimpleAlphabetIndexerView extends LinearLayout {
         } else {
             getRecyclerView().scrollToPosition(position);
         }
+    }
+
+    public void refreshAlphabetView() {
+        linearLayoutLetterHolder.removeAllViews();
+        alphabetHolderHeightCalculation();
+
+
     }
 
     public int getBackgroundColor() {
