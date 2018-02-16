@@ -81,18 +81,19 @@ public class SimpleAlphabetIndexerView extends LinearLayout {
     }
 
     private void alphabetHolderHeightCalculation() {
-        ViewTreeObserver viewTreeObserver = linearLayoutLetterHolder.getViewTreeObserver();
+        ViewTreeObserver viewTreeObserver = recyclerView.getViewTreeObserver();
+
         viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
 
                 if (Build.VERSION.SDK_INT < 16) {
-                    linearLayoutLetterHolder.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                    recyclerView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                 } else {
-                    linearLayoutLetterHolder.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    recyclerView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 }
 
-                final int height = linearLayoutLetterHolder.getMeasuredHeight();
+                final int height = recyclerView.getMeasuredHeight();
 
                 int singleLetterCellHeight = height / 26;
                 Log.d(TAG, "Single letter cell height: " + singleLetterCellHeight);
