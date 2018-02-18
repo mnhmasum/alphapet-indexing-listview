@@ -23,6 +23,9 @@ dependencies {
 
 ```
 
+### Support library version 
+Used the support library version 27.0.2
+
 ### XML
 ```XML
 <com.masum.atoz.indexer.SimpleAlphabetIndexerView
